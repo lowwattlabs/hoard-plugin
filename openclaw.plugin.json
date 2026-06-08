@@ -1,14 +1,14 @@
 {
   "id": "hoard",
   "name": "HOARD",
-  "description": "Durable agent memory that survives session resets — structured markdown persistence with provenance, auto-expiry, and consolidation for OpenClaw agents.",
-  "version": "2.0.2",
+  "description": "Durable agent memory that survives session resets. Structured markdown persistence with provenance, auto-expiry, and consolidation. Storage directory is validated — set config.memoryDir to a dedicated folder.",
+  "version": "2.0.3",
   "configSchema": {
     "type": "object",
     "properties": {
       "memoryDir": {
         "type": "string",
-        "description": "Path to the memory directory (default: ./memory)"
+        "description": "Absolute path to the memory directory. Defaults to ./memory. Must be a dedicated storage folder — not home, root, or system directories."
       },
       "autoExpire": {
         "type": "boolean",
@@ -21,7 +21,7 @@
     }
   },
   "activation": {
-    "onStartup": true
+    "onStartup": false
   },
   "contracts": {
     "tools": [
