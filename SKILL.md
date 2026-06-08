@@ -12,7 +12,7 @@ Any OpenClaw agent that needs to remember things between sessions. If your agent
 
 ## Links
 
-- **GitHub**: https://github.com/lowwattlabs/hoard
+- **GitHub**: https://github.com/lowwattlabs/hoard-plugin
 - **ClawHub**: https://clawhub.ai/lowwattlabs/hoard
 
 ## License
