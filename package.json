@@ -1,7 +1,7 @@
 {
   "name": "@lowwattlabs/hoard",
-  "version": "2.0.3",
-  "description": "Durable agent memory that survives session resets — structured markdown persistence with provenance, auto-expiry, and consolidation.",
+  "version": "2.0.4",
+  "description": "Durable agent memory that survives session resets \u2014 structured markdown persistence with provenance, auto-expiry, and consolidation.",
   "type": "module",
   "main": "./dist/index.js",
   "private": false,
@@ -30,7 +30,7 @@
       "./dist/index.js"
     ],
     "compat": {
-      "pluginApi": "2026.5.17"
+      "pluginApi": ">=2026.5.0"
     },
     "build": {
       "openclawVersion": "2026.6.1"
