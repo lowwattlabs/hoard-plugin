@@ -1,7 +1,7 @@
 {
   "name": "@lowwattlabs/hoard",
-  "version": "2.0.4",
-  "description": "Durable agent memory that survives session resets \u2014 structured markdown persistence with provenance, auto-expiry, and consolidation.",
+  "version": "2.1.0",
+  "description": "Durable agent memory that survives session resets. Structured markdown persistence with provenance, auto-expiry, and consolidation. Delete is soft by default.",
   "type": "module",
   "main": "./dist/index.js",
   "private": false,

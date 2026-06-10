@@ -1,31 +1,31 @@
 {
-  "id": "hoard",
-  "name": "HOARD",
-  "description": "Durable agent memory that survives session resets. Structured markdown persistence with provenance, auto-expiry, and consolidation. Storage directory is validated — set config.memoryDir to a dedicated folder.",
-  "version": "2.0.4",
-  "configSchema": {
-    "type": "object",
-    "properties": {
-      "memoryDir": {
-        "type": "string",
-        "description": "Absolute path to the memory directory. Defaults to ./memory. Must be a dedicated storage folder — not home, root, or system directories."
-      },
-      "autoExpire": {
-        "type": "boolean",
-        "description": "Enable automatic expiry of old entries (default: true)"
-      },
-      "consolidateOnStartup": {
-        "type": "boolean",
-        "description": "Run consolidation on plugin startup (default: false)"
-      }
+    "id": "hoard",
+    "name": "HOARD",
+    "description": "Durable agent memory that survives session resets. Structured markdown persistence with provenance, auto-expiry, and consolidation. Delete is soft by default — moves to trash, not permanent removal. Permanent deletion requires explicit confirmation.",
+    "version": "2.1.0",
+    "configSchema": {
+        "type": "object",
+        "properties": {
+            "memoryDir": {
+                "type": "string",
+                "description": "Absolute path to the memory directory. Defaults to ./memory. Must be a dedicated storage folder — not home, root, or system directories."
+            },
+            "autoExpire": {
+                "type": "boolean",
+                "description": "Enable automatic expiry of old entries (default: true)"
+            },
+            "consolidateOnStartup": {
+                "type": "boolean",
+                "description": "Run consolidation on plugin startup (default: false)"
+            }
+        }
+    },
+    "activation": {
+        "onStartup": false
+    },
+    "contracts": {
+        "tools": [
+            "hoard"
+        ]
     }
-  },
-  "activation": {
-    "onStartup": false
-  },
-  "contracts": {
-    "tools": [
-      "hoard"
-    ]
-  }
 }
